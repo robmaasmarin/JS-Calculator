@@ -1,0 +1,212 @@
+:root {
+  --white: #f8f9fa;
+  --light-gray: #6c757d;
+  --dark-gray: purple;
+  --black: black;
+  --green: #198754;
+  --red: #f67280;
+}
+
+body {
+  background-color: #66bfbf;
+  height: 100vh;
+}
+
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  color: #eaf6f6;
+  border: 4px solid white;
+  text-shadow: 0 0 3px black, 0 0 5px #c3195d;
+}
+
+.container {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 550px;
+  
+}
+.signature {
+  padding: 20px;
+  color: white; 
+  text-shadow: 0 0 3px black, 0 0 5px #c3195d;
+}
+button {
+  height: 48px;
+  font-size: 20px;
+      width: 100%;
+      border-radius: 20px;
+      margin: 3px;
+      border: 3px solid black;
+      font-weight: bold;
+}
+
+#answer {
+  height: 42px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid white;
+  font-size: 32px;
+  background-color: var(--dark-gray);
+  color: white;
+}
+
+#expression {
+  height: 42px;
+  
+  font-size: 32px;
+  background-color: var(--light-gray);
+  color: white;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+#display {
+  grid-area: display;
+  font-family: 'Tektur', cursive;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+#clear {
+  grid-area: limpiar;
+  background-color: var(--red);
+  color: white;
+}
+
+#negative {
+  grid-area: negative;
+}
+
+#porcentaje {
+  grid-area: porcentaje;
+
+}
+
+#seven {
+  grid-area: seven;
+
+}
+
+#eight {
+  grid-area: eight;
+
+}
+#nine {
+  grid-area: nine;
+
+}
+
+#divide {
+  grid-area: divide;
+
+}
+
+#multiply {
+  grid-area: multiply;
+
+}
+
+#four {
+  grid-area: four;
+
+}
+
+#five {
+  grid-area: five;
+
+}
+
+
+#six {
+  grid-area: six;
+
+}
+
+
+#minus {
+  grid-area: minus;
+
+}
+
+#add {
+  grid-area: add;
+
+}
+
+
+#one {
+  grid-area: one;
+
+}
+
+#two {
+  grid-area: two;
+
+}
+
+#three {
+  grid-area: three;
+
+}
+
+#zero {
+  grid-area: zero;
+
+}
+
+#decimal {
+  grid-area: decimal;
+
+}
+
+#igual {
+  grid-area: igual;
+
+}
+
+
+#calculator {
+  
+  display: grid;
+  grid-template-areas: 
+  "display display display display"
+  "limpiar negative porcentaje divide"
+  "seven eight nine multiply"
+  "four five six minus"
+  "one two three add"
+  "zero zero decimal igual";
+  grid-template-columns: 65px 65px 65px 65px;
+  gap: 20px;
+  padding: 30px;
+  padding-top: 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+  background-color: #eaf6f6;
+  height: 500px;
+  
+
+  ;
+}
+
+.light-gray {
+  background-color: var(--light-gray);
+  color: white;
+  font-weight: bold;
+}
+
+.white {
+  font-weight: bold;
+}
+
+.green {
+  background-color: var(--green);
+  font-weight: bold;
+  color: white;
+}
